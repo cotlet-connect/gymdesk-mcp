@@ -1,0 +1,17 @@
+{
+  "mcpServers": {
+    "cotlet": {
+      "url": "https://cotlet.dev/mcp/v1",
+      "headers": {
+        "Authorization": "Bearer ${COTLET_API_KEY}"
+      }
+    },
+    "gymdesk": {
+      "command": "uvx",
+      "args": ["gymdesk-mcp"],
+      "env": {
+        "COTLET_API_KEY": "${COTLET_API_KEY}"
+      }
+    }
+  }
+}
